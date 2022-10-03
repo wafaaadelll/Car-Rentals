@@ -1,0 +1,604 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+html{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+#home{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("../Images/header-bg.jpg") no-repeat center center/cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#home header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+#home header nav{
+    display: none;
+}
+
+#home>.container>div{
+    padding: 10px 0px 10px 0px;
+}
+#home>.container>div>article{
+    padding: 10px 0px 10px 0px;
+}
+#home>.container>div h6{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#home>.container>div h2{
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+#home>.container>div p{
+    color: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    text-align: justify;
+}
+#home>.container>div a{
+    font-size: 0.8rem;
+    background-color: RGB(250,182,0);
+    padding: 10px 10px 10px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#home>.container>div>form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: thin solid #fff;
+    background-color: RGBA(27,50,65,0.5);
+    padding: 10px;
+}
+#home>.container>div>form h3{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+#home>.container>div>form select,input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#home>.container>div>form select:invalid{
+    color: rgb(128, 128, 128);
+}
+#home>.container>div>form select option{
+    color: #000;
+}
+#home>.container>div>form button{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #fff;
+    border-radius: 5px;
+    background-color: RGB(250,182,0);
+}
+#about .container>h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#about .container>h6{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(136, 136, 136);
+    font-weight: lighter;
+}
+#about .container article{
+    background-color: RGB(237,237,247);
+    margin-bottom: 10px;
+    padding: 30px 20px 30px 20px;
+    border-radius: 10px;
+}
+#about>.container article>h2>img{
+    margin-right: 10px;
+}
+#about>.container article>h2{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+#about>.container article>p{
+    text-align: justify;
+    font-size: 0.9rem;
+    color: rgb(117, 117, 117);
+}
+#cars>.container h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+#cars>.container h6{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+#cars>.container p{
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: rgb(136, 136, 136);
+    text-align: justify;
+}
+#cars>.container a{
+    font-size: 0.8rem;
+    background-color: RGB(250,182,0);
+    padding: 10px 10px 10px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#cars>.container img{
+    max-width: 100%;
+}
+#services .container>h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#services .container>h6{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(136, 136, 136);
+    font-weight: lighter;
+}
+#services .container>article>div h4{
+    margin-bottom: 10px;
+}
+#services .container>article>div h3{
+    margin-bottom: 10px;
+    color: RGB(250,182,0);
+}
+#services .container>article>div sub{
+    font-weight: lighter;
+}
+#services .container>article>div p{
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: rgb(136, 136, 136);
+    text-align: justify;
+}
+#services .container>article a{
+    background-color: RGB(34,34,34);
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#services>.container img{
+    max-width: 100%;
+}
+#services>.points{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#services>.points span{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: rgb(219, 219, 219);
+}
+#services>.points .active{
+    background-color: RGB(250,182,0);
+}
+#team{
+    background: linear-gradient(rgba(7,10,25, 0.8),rgba(7,10,25, 0.8)),
+    url("../Images/callaction-bg.jpg");
+}
+#team>.container{
+    margin-top: 10px;
+    padding: 20px 20px;
+    text-align: center;
+    color: #fff;
+}
+#team>.container p{
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#team>.container a{
+    text-decoration: none;
+    color: RGB(250,182,0);
+    border: thin solid RGB(250,182,0);
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+#blog{
+    background-color: RGB(250,249,255);
+}
+#blog>.container>h2{
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+#blog>.container>p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(136, 136, 136);
+    font-weight: lighter;
+}
+#blog>.container>div>article>div>img{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+#blog>.container>div>article>div>h6{
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    display: inline-block;
+}
+#blog>.container>div>article>div>div{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+#blog>.container>div>article>div>p{
+    color: rgb(136, 136, 136);
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+#contact{
+    background-color: RGB(4,9,29);
+}
+#contact>.container {
+    padding: 30px 5px 30px 5px;
+}
+#contact>.container article h6{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#contact>.container article a{
+    color: rgb(209, 209, 209);
+    font-weight: lighter;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-bottom: 5px;
+    opacity: 0.5;
+}
+#contact>.container article a:hover{
+    opacity: 1;
+}
+#contact>.container article input{
+    padding: 5px 0px;
+    position: relative;
+    z-index: 1;
+}
+#contact>.container article button{
+    background-color: RGB(249,183,0);
+    border: 2px solid RGB(249,183,0);
+    padding: 5px 7px;
+    float: right;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}
+#contact>.container p{
+    color: rgb(209, 209, 209);
+    margin-top: 10px;
+    font-size: 0.6rem;
+    text-align: center;
+    opacity: 0.6;
+}
+@media (min-width: 576px) {
+    .container {
+        width: 536px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #home>.container article {
+        display: flex;
+    }
+    #home>.container article a{
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+    }
+    #home>.container>div>form{
+        padding: 30px;
+    }
+    #home>.container>div>form h3{
+        margin-bottom: 20px;
+    }
+    #home>.container>div>form select,input{
+        margin-bottom: 15px;
+        padding: 8px;
+    }
+    #about .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #about .container h2,h6{
+        flex-basis: 100%;
+    }
+    #about .container article{
+        width: 49%;
+    }
+    #services .container>article>div div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #services .container>article>div div>h4{
+        font-size: 1.5rem;
+    }
+    #services .container>article>div div>h3{
+        font-size: 1.7rem;
+    }
+    #blog>.container>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #blog>.container>div>article{
+        width: 48%;
+    }
+    #contact>.container article button{
+        margin-top: -45px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container{
+        width: 728px;
+    }
+    #cars>.container>article{
+        display: flex;
+    }
+    #cars>.container article a{
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        border-radius: 10px;
+    }
+    #services>.container>article{
+        display: flex;
+    }
+    #services>.container>article a{
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        border-radius: 10px;
+    }
+    #services>.container img{
+        width: 100%;
+        max-width: 100%;
+    }
+    #team>.container {
+        margin-top: 30px;
+    }
+    #team>.container>article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 10px;
+    }
+    #contact>.container>section{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #contact>.container>section article{
+        width: 32%;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 962px;
+    }
+    #home>.container>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #home>.container>div article{
+        display: block;
+        width: 58%;
+    }
+    #home>.container article h6{
+        width: 100%;
+    }
+    #home>.container article h2{
+        width: 100%;
+        font-size: 2rem;
+    }
+    #home>.container article a{
+        display: inline;
+        margin: 0;
+        border-radius: 0;
+        padding: 10px 60px;
+    }
+    #home>.container>div form{
+        width: 38%;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    #home>.container>div>form select,input{
+        margin-bottom: 11px;
+    }
+    #home>.container>div .half{
+        width: 49%;
+    }
+    #cars>.container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #cars>.container>article{
+        display: block;
+    }
+    #cars>.container>article a{
+        display: inline;
+        margin: 0;
+        border-radius: 0;
+        padding: 10px 60px;
+    }
+    #cars>.container img{
+        width: 49%;
+        order: -1;
+    }
+    #cars>.container article{
+        width: 49%;
+    }
+    #services>.container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    #services>.container h2,h6{
+        width: 100%;
+    }
+    #services>.container>article{
+        display: block;
+        width: 49%;
+    }
+    #services>.container>article a{
+        display: inline;
+        margin: 0;
+        border-radius: 0;
+        padding: 10px 60px;
+    }
+    #services>.container img{
+        width: 49%;
+    }
+    #services .points{
+        margin-top: 40px;
+    }
+    #team>.container>article {
+        padding: 70px 10px;
+    }
+    #blog>.container>div>article{
+        width: 22%;
+    }
+    #blog>.container>div>article>div>h6{
+        margin-bottom: 10px;
+        color: #fff;
+        background-color: #000;
+        padding: 5px 10px;
+        display: inline;
+    }
+    #blog>.container>div>article>div>h3{
+        margin-top:  10px;
+    }
+    #contact>.container>section{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #contact>.container>section article{
+        width: 19%;
+    }
+    #contact>.container>section article button{
+        margin-top: -41px;
+    }
+    #contact>.container p{
+        margin-bottom: 40px;
+        font-size: 0.9rem;
+    }
+    #home header nav .active{
+        background-color:RGB(250,182,0) ;
+    }
+    #home header nav a:hover{
+        background-color:RGB(250,182,0);
+    }
+    #home header nav{
+        margin-right: 20px;
+        display: block;
+    }
+    #home header nav a{
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: #fff;
+        padding: 10px;
+
+        margin-right: 5px;
+        text-transform: uppercase;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container{
+        width: 1150px;
+    }
+    #home>.container>div form{
+        padding: 25px;
+    }
+    #about .container article{
+        width: 32%;
+        margin-bottom: 25px;
+    }
+    #team>.container>article h2,p{
+        width: 100%;
+    }
+}
+@media (min-width: 1400px) { 
+    .container{
+        width: 1350px;
+    }   
+    #home>.container>div form{
+        padding: 35px;
+    }
+    #home>.container>div>form select,input{
+        padding: 10px;
+    }
+    #home>.container>div>form button{
+        padding: 15px 0px 15px 0px;
+    }
+}
